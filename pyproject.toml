@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "learning-asyncio"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "learning_asyncio"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.11.9"
+asyncpg = "^0.30.0"
+requests = "^2.32.3"
+numpy = "^2.2.1"
+websockets = "^14.1"
+starlette = "^0.45.2"
+uvicorn = "^0.34.0"
+django = "^5.1.5"
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
