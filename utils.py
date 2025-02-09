@@ -66,3 +66,12 @@ def generate_string() -> None:
 
     with open("some_random_words.txt", "w") as f:
         f.writelines(random_strings)
+
+
+@async_timed()
+async def cpu_bound_work() -> int:
+    """Функция симулирует нагрузку на CPU"""
+    counter = 0
+    for i in range(10000000000):
+        counter = counter + 1
+    return counter
